@@ -198,6 +198,54 @@ print ('After', smallest)
 
 
 
+price = 50
+while price > 10:
+    print (price)
+    price = price -5
+print (price)
+
+
+while True:
+    number = input ("Please Enter Number: ")
+    if number == '0':
+        break
+    print (number)
+print ('Thank You')
+
+
+while True:
+    names = input ('Please Enter Names: ')
+    if names == 'restart':
+        continue
+    elif names == 'done':
+        break
+    print (names)
+print ('Thank you')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 largest = None
 smallest = None
