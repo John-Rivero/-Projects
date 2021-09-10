@@ -124,68 +124,110 @@ for friend in friends:
 print ('Done')
 
 #Counting in a loop
-zork = 0
-print ('Before', zork)
-for thing in [9, 41, 12, 3, 74, 15] :
-    zork = zork + 1
-    print (zork, thing)
-print ('After, zork')
+value = 0
+numbers = [4, 123, 543, 325]
+for n in numbers:
+    value = value + 1
+    print (value, n)
+print ('success')
+
+value = 0
+numbers = [9, 8, 6, 43, 2]
+for n in numbers:
+    value = value + 1
+    print (value, n)
+print ('done')
 
 #Summing in a Loop
-zork = 0
-print ('Before', zork)
-for thing in [9, 41, 12, 3, 74, 15] :
-    zork = zork + thing
-    print (zork, thing)
-print ('After, zork')
+value = 0
+numbers = [123, 5435, 123, 6546]
+for n in numbers:
+    value = (value + n)
+    print (value, n)
+print ('done')
+
+
+values = 0
+numbers = [5, 2, 4, 6, 7]
+for n in numbers:
+    values = (values + n)
+    print (values , n)
+
+number = 0
+numbers = [4, 2, 5, 67, 2]
+for n in numbers:
+    number = (number + n)
+    print (number, n)
+print ('done')
 
 #Finding the Average in a Loop
-count = 0
-sum = 0
-print ('Before', count, sum)
-for value in [9, 41, 12, 3, 74, 15]:
-    count = count + 1
-    sum = sum + value
-    print (count, sum, value)
-print ('After', count, sum, sum/count)
+value = 0
+values = 0
+numbers = [123, 6456, 2343, 656]
+for n in numbers:
+    value = values + 1
+    values = values + n
+    print (values / value)
+print ('done')
+
+
+x = 0
+y = 0
+numbers = [1, 4, 5 ,2 ,6]
+for n in numbers:
+    x = x + 1
+    y = x + n
+    print ( y / x )
 
 #Filtering in a Loop
-print ('Before')
-for value in [9, 41, 12, 3, 74, 15]:
-    if value > 20:
-        print ('Large number', value)
-    print ('After')
+numbers = [124, 43543, 1234, 6543]
+for n in numbers:
+    if n > 1000:
+        print (n)
+print ('success')
+
+
+y = [100, 200, 400, 500]
+for n in y:
+    if n < 400:
+        print (n)
 
 
 #Searh Using a Boolean Varaiable
-found = False
-print ('Before', found)
-for value in [9, 41, 12, 3, 74, 15]:
-    if value == 3:
-        found = True
-    print (found, value)
-print ('After', found)
+x = False
+number = [ 1, 2, 5, 7, 43, 3]
+for n in number:
+    if n == 7:
+        x = True
+    print (x, number)
+
+check = False
+names = ['John', 'Karlene', 'Kiana', 'Derill', 'Ashley']
+for n in names:
+    if n == 'Karlene':
+        check = True
+    print (x, n)
 
 #How to find the largest value
-largest_so_far = -1
-print ('Before', largest_so_far)
-for the_num in [9, 41, 12, 3, 74, 15]:
-    if the_num > largest_so_far:
-        largest_so_far = the_num
-    print (largest_so_far, the_num)
-print ("After", largest_so_far)
+largestvalue = 0
+number = [2, 3, 534, 123, 5434, 123]
+for n in number:
+    if n > largestvalue:
+        largestvalue =  n
+    print (largestvalue, n)
 
 
 #How to find the smallest value
 smallest = None
-print ('Before')
-for value in [9, 41, 12, 3, 74, 15]:
-    if smallest is None:
-        smallest = value
-    elif value < smallest:
-        smallest = value
-    print (smallest, value)
-print ('After', smallest)
+number = [123, 32423, 12321, 1, 4]
+for n in number:
+   if smallest is None:
+      smallest = n
+
+   elif n < smallest:
+      smallest = n
+
+   print (smallest, n)
 
 
 
