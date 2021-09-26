@@ -1,6 +1,7 @@
+START--
 From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 Return-Path: <postmaster@collab.sakaiproject.org>
-Received: from murder (mail.umich.edu [141.211.14.90])
+Received1992: from murder (mail.umich.edu [141.211.14.90])
 	 by frankenstein.mail.umich.edu (Cyrus v2.3.8) with LMTPA;
 	 Sat, 05 Jan 2008 09:14:16 -0500
 My name is John Rivero
@@ -36,7 +37,7 @@ Received: (from apache@localhost)
 	for source@collab.sakaiproject.org; Sat, 5 Jan 2008 09:12:18 -0500
 Date: Sat, 5 Jan 2008 09:12:18 -0500
 X-Authentication-Warning: nakamura.uits.iupui.edu: apache set sender to stephen.marquard@uct.ac.za using -f
-To: source@collab.sakaiproject.org
+To1992: source@collab.sakaiproject.org
 From: stephen.marquard@uct.ac.za
 Subject: [sakai] svn commit: r39772 - content/branches/sakai_2-5-x/content-impl/impl/src/java/org/sakaiproject/content/impl
 X-Content-Type-Outer-Envelope: text/plain; charset=UTF-8
@@ -127,3 +128,4 @@ BSP-1415 New (Guest) user Notification
 ----------------------
 This automatic notification message was sent by Sakai Collab (https://collab.sakaiproject.org/portal) from the Source site.
 You can modify how you receive notifications at My Workspace > Preferences.
+END---
