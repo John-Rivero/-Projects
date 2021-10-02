@@ -1,0 +1,6 @@
+Asian: Rice & Noodle; Asian Buffet; Asian Buffet; Genghis Grill; Noodle Wave
+American: Harry's at the Harbor; Culver's; Delaney's Irish Pub & Scratch Kitchen; Hooters
+Mexican: Dillas Quesadillas; Del Sur Mexican Grill; Mesa's Mexican Grill; Cesar's Mexican Grill
+Comfort food: Delaney's Irish Pub & Scratch Kitchen; Cotton Patch Cafe; 11|17; Razzoo's Cajun Cafe
+Healthy food: Vitality Bowls McKinney; Original ChopShop; True Food Kitchen; Cafe Acai
+Fast food: Taco Bell; Chick-fil-A; Whataburger; Mcdonald; Sonic Drive-In
