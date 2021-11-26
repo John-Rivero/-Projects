@@ -10,6 +10,7 @@ cert_none = ssl.create_default_context()
 cert_none.check_hostname = False
 cert_none.verify_mode = ssl.CERT_NONE
 
+#change character by changing the number at the end of the url
 service_url = "https://rickandmortyapi.com/api/character/2"
 html = urllib.request.urlopen (service_url, context=cert_none)
 html1 = html.read().decode()
