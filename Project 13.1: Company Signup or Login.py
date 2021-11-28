@@ -7,7 +7,7 @@ def login ():
 x = login ()
 
 def password ():
-    password1 = "Aldrin12345"
+    password1 = "Aldrin$12345"
     return password1
 y = password ()
 
@@ -16,12 +16,10 @@ y = password ()
 print ('Company A')
 
 
-
 while True:
 
     question1 = input ('(1) for Login, (2) for Signup: ')
     print (' ')
-
 
     if question1 == ('2'):
         signup1 = input ('Create your username: ')
@@ -50,26 +48,42 @@ while True:
             elif re.search ('[!@#$%^&*]', signup2) is None:
                 print ('The password must consists of some symbols.')
             else:
+                print (' ')
                 print("ID and Password successfully created")
                 break
         
         print (' ')
 
-        signup3 = input ('Please reenter your username: ')
-        if signup3 == signup1:
-            print ('User ID matches')
-            print (' ')
+        while True:
 
-        signup4 = input ('Please reenter your password: ')
-        if signup4 == signup2:
-            print ('Password matches')
-            print (' ')
+            signup3 = input ('Please reenter your username: ')
+            if signup3 == signup1:
+                print ('User ID matches')
+                print (' ')
 
-        
-        print ("Account successfully created")
-        print ('Sign in to access your account')
-        print (' ')
-        continue
+            elif signup3 != signup1:
+                print ("User ID does not match")
+                print (' ')
+                continue
+
+            break
+
+        while True:
+
+            signup4 = input ('Please reenter your password: ')
+            if signup4 == signup2:
+                print ('Password matches')
+                print (' ')
+
+            elif signup4 != signup2:
+                print ("Password does not match")
+                print (' ')
+                continue               
+
+            print ("Account successfully created")
+            print ('Sign in to access your account')
+            print (' ')
+            break
 
 
     elif question1 == ('1'):
@@ -85,13 +99,11 @@ while True:
             if login2 == x or signup3:
                 print ('Correct ID')
                 print (' ')
-        
 
             elif login2 != x or signup3:
                 print ('Incorrect ID, Try again')
                 print (' ')
                 continue
-
 
             password2 = input ("Password: ")
             if password2 == y or signup4:
@@ -105,8 +117,6 @@ while True:
                 continue
 
             break
-
         break
-
     
-
+print ('Succesfully logged in')
