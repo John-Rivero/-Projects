@@ -1,3 +1,6 @@
+import re
+
+#stored ID and Password
 def login ():
     login01 = 'john.aldrin@gmail.com'
     return login01
@@ -12,6 +15,8 @@ y = password ()
 #print ("State Farm")
 print ('Company A')
 
+
+
 while True:
 
     question1 = input ('(1) for Login, (2) for Signup: ')
@@ -19,10 +24,35 @@ while True:
 
 
     if question1 == ('2'):
-
         signup1 = input ('Create your username: ')
         print (' ')
-        signup2 = input ('Create your password: ')
+
+        print ('The password must consists of 10 characters')
+        print ("The password must consists of some numbers")
+        print ("The password must consists of some capital letters")
+        print ('The password must consists of some symbols')
+
+
+#parameters for the password
+        while True:
+
+            signup2 = input ('Enter password: ')
+
+            if len (signup2) < 10:
+                print ("The password must consists of 10 characters.")
+
+            elif re.search ('[0-9]', signup2) is None:
+                print ("The password must consists of some numbers.")
+
+            elif re.search ('[A-Z]', signup2) is None:
+                print ("The password must consists of some capital letters.")
+
+            elif re.search ('[!@#$%^&*]', signup2) is None:
+                print ('The password must consists of some symbols.')
+            else:
+                print("ID and Password successfully created")
+                break
+        
         print (' ')
 
         signup3 = input ('Please reenter your username: ')
@@ -48,7 +78,7 @@ while True:
         print (' ')
         print ("Log in to view and manage your account")
 
-
+#Choose from either stored ID and Pass or newly created ID and Pass
         while True:
 
             login2 = input ("User ID: ")
@@ -78,9 +108,5 @@ while True:
 
         break
 
-
-
-
-print ('Good job')
-
+    
 
