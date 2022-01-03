@@ -1,7 +1,7 @@
 import pandas as pd
 
-housing_economy_chart = pd.read_html ('https://en.wikipedia.org/wiki/Car_of_the_Year#Global')
-hc = housing_economy_chart[0]
+top5 = pd.read_html ('https://en.wikipedia.org/wiki/Car_of_the_Year#Global')
+hc = top5[0]
 
 top_car = hc[['Year', 'World Car of the Year']].head(5)
 
