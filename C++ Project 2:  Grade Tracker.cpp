@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <string>
 
 using namespace std;
@@ -7,56 +6,28 @@ using namespace std;
 int main()
 
 {
-	double classGrade;
-	double totalGrade = 0;
-	int classCount = 0;
+	double grades;
+	double totalOfGrades = 0;
+	int amountOfClass = 0;
 	string className;
-	char programComplete;
-	double gradeAverage;
-
-	cout << "Welcome to my grade calculator program" << endl;
-	cout << "Please enter the name of the class" << endl;
-	getline(cin, className);
-	cout << "You entered " << className << endl;
 
 
-	while (true)
+	cout << "Welcome to my Grade Calculator Version 2" << endl;
+	cout << "Please enter your grades (enter -1 if you are finished)" << endl;
+	cin >> grades;
+
+	while (grades != -1)
 	{
-		cout << "Please enter your grades (if you are finished please type 'done')" << endl;
-		cin >> classGrade;
-		totalGrade += classGrade;
-		classCount++;
+		totalOfGrades += grades;
+		amountOfClass++;
 
-		cout << "Press 'y' to continue or 'n' to quit" <<endl;
-		cin >> programComplete;
-
-
-		if (programComplete == 'y')
-		{
-			continue;
-		}
-
-		else if (programComplete == 'n')
-		{
-			break;
-		}
-
-		else
-		{
-			cout << "Incorrect input, please try again" << endl;
-			continue;
-		}
-
+		cout << "Please enter your grades (enter -1 if you are finished" << endl;
+		cin >> grades;
 	}
 
-	cout << "The total average of your grades is: " << endl;
-	gradeAverage = (totalGrade / classCount);
-	cout << gradeAverage;
+	cout << "The average of your total grades is " << endl;
+	cout << (totalOfGrades / amountOfClass);
+
 
 	return 0;
-
-
-
-
-
 }
